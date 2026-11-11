@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MetaCérebro</title>
+  <meta name="description" content="Transformamos conhecimento científico em desenvolvimento humano para que empresas formem líderes mais preparados, equipes mais engajadas e ambientes de trabalho psicologicamente saudáveis.">
+  <meta name="theme-color" content="#1d2f56">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MetaCérebro — Desenvolvendo capacidades">
+  <meta property="og:description" content="Neurociência aplicada à gestão de pessoas.">
+  <meta property="og:locale" content="pt_BR">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="preload" href="assets/fonts/nunito-latin-900-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/gabarito-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/styles.css">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+<symbol id="i-award" viewBox="0 0 24 24"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526" />
+  <circle cx="12" cy="8" r="6" /></symbol>
+<symbol id="i-chart-pie" viewBox="0 0 24 24"><path d="M21 12c.552 0 1.005-.449.95-.998a10 10 0 0 0-8.953-8.951c-.55-.055-.998.398-.998.95v8a1 1 0 0 0 1 1z" />
+  <path d="M21.21 15.89A10 10 0 1 1 8 2.83" /></symbol>
+<symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+  <path d="M16 3.128a4 4 0 0 1 0 7.744" />
+  <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+  <circle cx="9" cy="7" r="4" /></symbol>
+<symbol id="i-messages-square" viewBox="0 0 24 24"><path d="M16 10a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 14.286V4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
+  <path d="M20 9a2 2 0 0 1 2 2v10.286a.71.71 0 0 1-1.212.502l-2.202-2.202A2 2 0 0 0 17.172 19H10a2 2 0 0 1-2-2v-1" /></symbol>
+<symbol id="i-chart-no-axes-combined" viewBox="0 0 24 24"><path d="M12 16v5" />
+  <path d="M16 14.639V21" />
+  <path d="M20 10.656V21" />
+  <path d="m22 3-8.646 8.646a.5.5 0 0 1-.708 0L9.354 8.354a.5.5 0 0 0-.707 0L2 15" />
+  <path d="M4 18.463V21" />
+  <path d="M8 14.656V21" /></symbol>
+<symbol id="i-smile" viewBox="0 0 24 24"><path d="M15 10V9" />
+  <path d="M16.472 15a6 6 0 01-8.943 0" />
+  <path d="M9 10V9" />
+  <circle cx="12" cy="12" r="10" /></symbol>
+<symbol id="i-chevron-left" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6" /></symbol>
+<symbol id="i-chevron-right" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6" /></symbol>
+<symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14" />
+  <path d="m12 5 7 7-7 7" /></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5" /></symbol>
+<symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 5h16" />
+  <path d="M4 12h16" />
+  <path d="M4 19h16" /></symbol>
+<symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18" />
+  <path d="m6 6 12 12" /></symbol>
+</svg>
+
+  <!-- ============================== NAV ============================== -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a class="nav__logo" href="#inicio" aria-label="MetaCérebro — início">
+        <img src="assets/img/logo-nav.png" alt="MetaCérebro — Desenvolvendo capacidades" width="281" height="92">
+      </a>
+      <button class="nav__toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-links">
+        <svg class="icon icon--menu"><use href="#i-menu"/></svg>
+      </button>
+      <ul class="nav__links" id="nav-links">
+        <li><a class="nav__link is-active" href="#inicio">Início</a></li>
+        <li><a class="nav__link" href="#sobre">Sobre</a></li>
+        <li><a class="nav__link" href="#solucoes">Soluções</a></li>
+        <li><a class="nav__link" href="#resultados">Resultados</a></li>
+        <li><a class="nav__link" href="#nr1">NR-1</a></li>
+        <li><a class="nav__cta" href="#contato">Fale Conosco</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============================== HERO ============================== -->
+    <section class="hero" id="inicio">
+      <div class="hero__text">
+        <h1 class="hero__title">
+          <span class="hero__title-1">Desenvolvemos pessoas,</span>
+          <span class="hero__title-2">Fortalecemos organizações.</span>
+        </h1>
+        <p class="hero__lead">Transformamos conhecimento científico em desenvolvimento humano para que empresas formem líderes mais preparados, equipes mais engajadas e ambientes de trabalho psicologicamente saudáveis.</p>
+        <a class="btn hero__btn" href="#sobre">Conheça a MetaCérebro <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+      </div>
+      <div class="hero__media">
+        <div class="hero__img">
+          <img src="assets/img/hero-equipe.webp" alt="Equipe em reunião de desenvolvimento" width="2000" height="1333" fetchpriority="high">
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== PILARES ============================== -->
+    <section class="pillars" id="pilares">
+      <div class="pillars__inner fade-in">
+        <h2 class="section-title">Nossos Pilares</h2>
+        <p class="pillars__lead"><span style="color:var(--navy)">Há mais de cinco anos, desenvolvemos o</span> <strong>potencial humano</strong> <span style="color:var(--navy)">por meio</span> <br>da Neurociência, Educação e Desenvolvimento de Pessoas.</p>
+        <div class="pillars__grid">
+          <div class="pillar">Neurociência</div>
+          <div class="pillar">Neuropsicopedagogia</div>
+          <div class="pillar">Educação</div>
+          <div class="pillar">Desenvolvimento Humano</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== QUEM SOMOS ============================== -->
+    <section class="about" id="sobre">
+      <div class="about__grid">
+        <div class="about__media fade-in">
+          <div class="about__photo">
+            <img src="assets/img/about-profissional.webp" alt="Profissional da MetaCérebro conduzindo uma atividade com uma equipe" width="1899" height="798" loading="lazy">
+          </div>
+          <div class="about__stat">
+            <strong>5+</strong>
+            <span>Anos desenvolvendo<br>potencial humano</span>
+          </div>
+        </div>
+
+        <div class="about__content fade-in" style="--d:120ms">
+          <span class="pill pill--about">Quem Somos</span>
+          <h2 class="about__title">Desenvolvemos pessoas,<span>fortalecemos organizações.</span></h2>
+          <p class="about__text">A MetaCérebro é uma empresa especializada em desenvolvimento cognitivo e socioemocional, dedicada a promover o potencial humano por meio da integração entre ciência, educação e desenvolvimento<br class="br-lg"> de pessoas.</p>
+          <p class="about__text">Nossa atuação é fundamentada em Neurociência, Neuropsicopedagogia, Educação e Desenvolver Indivíduos, permitindo a construção de soluções baseadas em evidências científicas e aplicáveis às necessidades reais<br class="br-lg"> de indivíduos e organizações.</p>
+          <h3 class="about__sub">Nossa Atuação</h3>
+          <ul class="about__list">
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>Desenvolvimento cognitivo<br class="br-lg"> e funções executivas</span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>Atenção, memória, concentração<br class="br-lg"> e raciocínio lógico</span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>Competências socioemocionais<br class="br-lg"> e inteligência emocional</span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>Liderança e desenvolvimento<br class="br-lg"> de equipes</span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>Gestão de pessoas e cultura organizacional</span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>Saúde mental e bem-estar<br class="br-lg"> corporativo</span></li>
+          </ul>
+          <a class="btn" href="#contato">Saiba Mais</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== SOLUÇÕES ============================== -->
+    <section class="programs" id="solucoes">
+      <div class="container">
+        <div class="section-head fade-in">
+          <span class="pill">Soluções</span>
+          <h2 class="section-title">Nossos Programas</h2>
+          <p class="section-lead">Cada projeto é estruturado <strong>de acordo com as necessidades</strong> e os <strong>desafios de cada organização</strong>, integrando <strong>diagnóstico, desenvolvimento</strong> e <strong>acompanhamento de resultados.</strong></p>
+        </div>
+
+        <div class="slider fade-in" role="region" aria-roledescription="carrossel" aria-label="Nossos programas" style="--d:100ms">
+          <div class="slider__viewport">
+            <div class="slider__track" id="slider-track">
+
+              <article class="slide" aria-label="NR-1 e Saúde Psicossocial">
+                <div class="slide__media slide__media--nr1"><img src="assets/img/program-nr1.webp" alt=""></div>
+                <div class="slide__body">
+                  <p class="slide__eyebrow">Para colaboradores e organizações</p>
+                  <h3 class="slide__title">NR-1 e Saúde Psicossocial</h3>
+                  <p class="slide__text">Soluções voltadas à identificação e gestão de riscos psicossociais no ambiente de trabalho. Apoiamos organizações na promoção da saúde mental, no fortalecimento do bem-estar dos colaboradores e na adequação às exigências da NR-1.</p>
+                  <ul class="slide__list">
+                    <li>Identificação de riscos psicossociais</li>
+                    <li>Ambiente organizacional saudável</li>
+                    <li>Prevenção e gestão de riscos</li>
+                    <li>Planos de ação e acompanhamento</li>
+                    <li>Desenvolvimento de lideranças</li>
+                    <li>Apoio à conformidade com a NR-1</li>
+                  </ul>
+                  <a class="btn slide__btn" href="#contato">Solicitar informações</a>
+                </div>
+              </article>
+
+              <article class="slide" aria-label="Desenvolvimento Corporativo">
+                <div class="slide__media slide__media--corp"><img src="assets/img/program-corporativo.webp" alt=""></div>
+                <div class="slide__body">
+                  <p class="slide__eyebrow">Para empresas e lideranças</p>
+                  <h3 class="slide__title">Desenvolvimento Corporativo</h3>
+                  <p class="slide__text">Programas que integram o desenvolvimento de competências cognitivas e socioemocionais essenciais para o contexto corporativo. Desenvolvemos pessoas e equipes mais preparadas para lidar com os desafios do ambiente de trabalho.</p>
+                  <ul class="slide__list">
+                    <li>Inteligência emocional</li>
+                    <li>Autorregulação</li>
+                    <li>Tomada de decisão</li>
+                    <li>Comunicação assertiva</li>
+                    <li>Gestão de conflitos</li>
+                    <li>Liderança e desenvolvimento<br class="br-lg"> de equipes</li>
+                  </ul>
+                  <a class="btn slide__btn" href="#contato">Solicitar informações</a>
+                </div>
+              </article>
+
+              <article class="slide" aria-label="Programas Personalizados">
+                <div class="slide__media slide__media--pers"><img src="assets/img/program-personalizado.webp" alt=""></div>
+                <div class="slide__body">
+                  <p class="slide__eyebrow">Soluções sob demanda</p>
+                  <h3 class="slide__title">Programas Personalizados</h3>
+                  <p class="slide__text">Desenvolvemos soluções sob medida, considerando os desafios, as necessidades e os objetivos de cada organização. Integramos conhecimento científico e metodologias adaptadas para promover o desenvolvimento humano e resultados sustentáveis.</p>
+                  <ul class="slide__list">
+                    <li>Diagnóstico de necessidades</li>
+                    <li>Acompanhamento de resultados</li>
+                    <li>Soluções personalizadas</li>
+                    <li>Formações e programas contínuos</li>
+                    <li>Metodologias baseadas em evidências</li>
+                    <li>Integração com a cultura organizacional</li>
+                  </ul>
+                  <a class="btn slide__btn" href="#contato">Solicitar informações</a>
+                </div>
+              </article>
+
+            </div>
+          </div>
+          <button class="slider__arrow slider__arrow--prev" type="button" aria-label="Programa anterior"><svg class="icon"><use href="#i-chevron-left"/></svg></button>
+          <button class="slider__arrow slider__arrow--next" type="button" aria-label="Próximo programa"><svg class="icon"><use href="#i-chevron-right"/></svg></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== RESULTADOS ============================== -->
+    <section class="results" id="resultados">
+      <div class="container">
+        <div class="section-head fade-in">
+          <span class="pill pill--soft">Resultados</span>
+          <h2 class="section-title">Resultados que Geram Valor</h2>
+          <p class="section-lead">Ao investir no desenvolvimento das pessoas, as organizações fortalecem sua <strong>capacidade de inovar</strong>, aumentam o <strong>engajamento das equipes</strong> e criam ambientes mais <strong>produtivos e sustentáveis.</strong></p>
+        </div>
+
+        <div class="results__grid">
+          <article class="result fade-in">
+            <div class="result__icon" style="--ih:44px"><svg class="icon" aria-hidden="true"><use href="#i-award"/></svg></div>
+            <h3>Lideranças mais eficazes</h3>
+            <p>Desenvolvimento de lideranças e equipes mais conscientes, preparadas e orientadas a resultados.</p>
+          </article>
+          <article class="result fade-in" style="--d:80ms">
+            <div class="result__icon" style="--ih:42px"><svg class="icon" aria-hidden="true"><use href="#i-chart-pie"/></svg></div>
+            <h3>Clima organizacional</h3>
+            <p>Melhoria do clima organizacional com ambientes mais saudáveis, produtivos e colaborativos.</p>
+          </article>
+          <article class="result fade-in" style="--d:160ms">
+            <div class="result__icon" style="--ih:39px"><svg class="icon" aria-hidden="true"><use href="#i-users"/></svg></div>
+            <h3>Engajamento e retenção</h3>
+            <p>Maior engajamento e retenção de<br class="br-lg"> talentos por meio do investimento<br class="br-lg"> no desenvolvimento humano.</p>
+          </article>
+          <article class="result fade-in">
+            <div class="result__icon" style="--ih:45px"><svg class="icon" aria-hidden="true"><use href="#i-messages-square"/></svg></div>
+            <h3>Comunicação eficaz</h3>
+            <p>Aprimoramento da comunicação e da colaboração entre equipes e áreas da organização.</p>
+          </article>
+          <article class="result fade-in" style="--d:80ms">
+            <div class="result__icon" style="--ih:46px"><svg class="icon" aria-hidden="true"><use href="#i-chart-no-axes-combined"/></svg></div>
+            <h3>Produtividade e decisão</h3>
+            <p>Aumento da produtividade e da qualidade das decisões com base no desenvolvimento cognitivo.</p>
+          </article>
+          <article class="result fade-in" style="--d:160ms">
+            <div class="result__icon" style="--ih:42px"><svg class="icon" aria-hidden="true"><use href="#i-smile"/></svg></div>
+            <h3>Redução de conflitos</h3>
+            <p>Redução de conflitos e do estresse ocupacional através do fortalecimento socioemocional.</p>
+          </article>
+        </div>
+
+        <div class="quote fade-in">
+          <p>Mais do que oferecer treinamentos, promovemos experiências práticas de aprendizagem que geram mudanças comportamentais consistentes e sustentáveis.</p>
+          <small>MetaCérebro — Desenvolvendo capacidades</small>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== NR-1 ============================== -->
+    <section class="nr1" id="nr1">
+      <div class="nr1__grid">
+        <div class="nr1__content fade-in">
+          <span class="pill">Atualização NR-1</span>
+          <h2 class="nr1__title">Conformidade e cuidado<br class="br-lg"> com a <span>saúde mental<br class="br-lg"> corporativa.</span></h2>
+          <p class="nr1__text">A atualização da NR-1 reforça a importância da identificação, prevenção e gestão dos riscos psicossociais relacionados ao trabalho. Nesse contexto, nossa consultoria atua de forma integrada para apoiar empresas no cumprimento das exigências legais e, principalmente, no cuidado<br class="br-lg"> real com as pessoas.</p>
+          <ol class="nr1__steps">
+            <li class="step">
+              <span class="step__n" aria-hidden="true">01</span>
+              <div><h3>Identificação de riscos psicossociais</h3><p>Diagnóstico organizacional para mapear fatores de risco à saúde mental no ambiente de trabalho.</p></div>
+            </li>
+            <li class="step">
+              <span class="step__n" aria-hidden="true">02</span>
+              <div><h3>Prevenção e gestão de riscos</h3><p>Programas estruturados de prevenção com foco em bem-estar, equilíbrio emocional e saúde mental corporativa.</p></div>
+            </li>
+            <li class="step">
+              <span class="step__n" aria-hidden="true">03</span>
+              <div><h3>Desenvolvimento de lideranças</h3><p>Preparação de líderes para identificar, acolher e gerenciar questões de saúde mental em suas equipes.</p></div>
+            </li>
+            <li class="step">
+              <span class="step__n" aria-hidden="true">04</span>
+              <div><h3>Ambiente psicologicamente saudável</h3><p>Construção de uma cultura organizacional que promove segurança psicológica, pertencimento e equilíbrio.</p></div>
+            </li>
+          </ol>
+        </div>
+
+        <div class="nr1__media fade-in" style="--d:120ms">
+          <div class="nr1__photo"><img src="assets/img/nr1-saude-mental.webp" alt="Aperto de mãos entre profissionais" width="700" height="800" loading="lazy"></div>
+          <div class="nr1__badge">
+            <strong>NR-1</strong>
+            <span>Riscos Psicossociais<br>Conformidade Legal</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== CONTATO ============================== -->
+    <section class="contact" id="contato">
+      <div class="contact__bg" aria-hidden="true"><img src="assets/img/contact-bg.png" alt="" loading="lazy"></div>
+      <div class="contact__grid">
+        <div class="contact__info fade-in">
+          <span class="pill pill--light">Fale Conosco</span>
+          <h2 class="contact__title">Vamos desenvolver<br>juntos o potencial<br>da sua equipe?</h2>
+          <p class="contact__text">Entre em contato para saber como a MetaCérebro pode apoiar<br class="br-lg"> o desenvolvimento humano da sua organização. Cada projeto começa com uma conversa.</p>
+          <ul class="contact__list">
+            <li><a class="contact__item" href="mailto:contato@metacerebro.com.br"><span class="contact__letter" aria-hidden="true">E</span><span><span class="contact__label">E-mail</span><span class="contact__value">contato@metacerebro.com.br</span></span></a></li>
+            <li><a class="contact__item" href="https://wa.me/5511987810349" target="_blank" rel="noopener"><span class="contact__letter" aria-hidden="true">W</span><span><span class="contact__label">WhatsApp</span><span class="contact__value">+55 (11) 9 8781-0349</span></span></a></li>
+            <li class="contact__item"><span class="contact__letter" aria-hidden="true">L</span><span><span class="contact__label">Localização</span><span class="contact__value">São Paulo, Brasil</span></span></li>
+            <li><a class="contact__item" href="https://www.facebook.com/metacerebro" target="_blank" rel="noopener"><span class="contact__letter" aria-hidden="true">F</span><span><span class="contact__label">Facebook</span><span class="contact__value">metacerebro</span></span></a></li>
+            <li><a class="contact__item" href="https://www.instagram.com/metacerebro" target="_blank" rel="noopener"><span class="contact__letter" aria-hidden="true">I</span><span><span class="contact__label">Instagram</span><span class="contact__value">metacerebro</span></span></a></li>
+          </ul>
+        </div>
+
+        <form class="form fade-in" id="contact-form" action="mailto:contato@metacerebro.com.br" method="post" enctype="text/plain" style="--d:120ms">
+          <div class="form__fields">
+            <h3>Solicite uma conversa</h3>
+            <div class="form__row">
+              <div class="field"><label for="f-nome">Nome completo</label><input id="f-nome" name="nome" type="text" placeholder="Seu nome" autocomplete="name" required></div>
+              <div class="field"><label for="f-email">E-mail</label><input id="f-email" name="email" type="email" placeholder="seu@email.com" autocomplete="email" required></div>
+            </div>
+            <div class="field"><label for="f-assunto">Assunto</label><input id="f-assunto" name="assunto" type="text" placeholder="Como podemos ajudar?"></div>
+            <div class="field"><label for="f-empresa">Empresa</label><input id="f-empresa" name="empresa" type="text" placeholder="Nome da empresa" autocomplete="organization"></div>
+            <div class="field"><label for="f-msg">Como podemos ajudar?</label><textarea id="f-msg" name="mensagem" placeholder="Conte brevemente sobre sua necessidade..." required></textarea></div>
+            <button class="btn form__submit" type="submit">Enviar mensagem</button>
+            <p class="form__status" role="status" aria-live="polite"></p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================== FOOTER ============================== -->
+  <footer class="footer">
+    <div class="footer__grid">
+      <div>
+        <img class="footer__logo" src="assets/img/logo-footer.png" alt="MetaCérebro — Desenvolvendo capacidades" width="179" height="43">
+        <p class="footer__about">Desenvolvemos pessoas, fortalecemos organizações por meio da integração entre ciência, educação e desenvolvimento humano.</p>
+      </div>
+      <nav aria-label="Rodapé">
+        <h4>Navegação</h4>
+        <div class="footer__list">
+          <a href="#sobre">Sobre</a>
+          <a href="#solucoes">Soluções</a>
+          <a href="#resultados">Resultados</a>
+          <a href="#nr1">NR-1</a>
+          <a href="#contato">Fale Conosco</a>
+        </div>
+      </nav>
+      <div>
+        <h4>Contato</h4>
+        <div class="footer__list">
+          <a href="mailto:contato@metacerebro.com.br">contato@metacerebro.com.br</a>
+          <a href="https://wa.me/5511987810349" target="_blank" rel="noopener">+55 (11) 9 8781-0349</a>
+          <span>São Paulo, Brasil</span>
+        </div>
+        <div class="footer__social">
+          <a href="https://www.facebook.com/metacerebro" target="_blank" rel="noopener" aria-label="Facebook"><img src="assets/icons/facebook.svg" alt="" width="22" height="22"></a>
+          <a href="https://www.instagram.com/metacerebro" target="_blank" rel="noopener" aria-label="Instagram"><img src="assets/icons/instagram.svg" alt="" width="22" height="22"></a>
+          <a href="https://www.linkedin.com/company/metacerebro" target="_blank" rel="noopener" aria-label="LinkedIn"><img src="assets/icons/linkedin.svg" alt="" width="22" height="22"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__bottom-inner">
+        <p>© 2026 MetaCérebro. Todos os direitos reservados. Criado por Sobreponto.cc</p>
+        <p>Neurociência Aplicada à Gestão de Pessoas</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
