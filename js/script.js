@@ -170,6 +170,31 @@
     place(pos);
   }
 
+
+  /* ---------------- Programa de interesse (vem do hash: contato.html#programa-mcdh) ---------------- */
+  var INTERESSES = {
+    "programa-mcdh": "Programa MCDH",
+    "programa-essencial": "Programa Essencial de Desenvolvimento Humano",
+    "palestras": "Palestras Inspiracionais",
+    "palestra-cognitivo": "Palestra Desenvolvimento Humano Cognitivo",
+    "palestra-socioemocional": "Palestra Desenvolvimento Humano Socioemocional",
+    "palestra-integral": "Palestra Desenvolvimento Humano Integral"
+  };
+  function aplicarInteresse() {
+    var nome = INTERESSES[(location.hash || "").replace("#", "")];
+    var assunto = document.getElementById("f-assunto");
+    var msg = document.getElementById("f-msg");
+    if (!nome || !assunto || !msg) return;
+    assunto.value = "Interesse: " + nome;
+    if (!msg.value || msg.dataset.auto === "1") {
+      msg.value = "Olá! Tenho interesse no(a) " + nome + " e gostaria de receber mais informações.";
+      msg.dataset.auto = "1";
+      msg.addEventListener("input", function () { msg.dataset.auto = "0"; }, { once: true });
+    }
+  }
+  aplicarInteresse();
+  window.addEventListener("hashchange", aplicarInteresse);
+
   /* ---------------- Formulário de contato ---------------- */
   var form = document.getElementById("contact-form");
   if (form) {
