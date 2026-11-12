@@ -928,3 +928,16 @@ a.contact__item:hover .contact__value { text-decoration: underline; }
 .pg-talk__ul { margin-bottom: 28px; }
 .pg-talk--feat .pg-talk__btn { background: #fff; color: #0d2352; }
 .pg-talk--feat .pg-talk__btn:hover { background: #fff; box-shadow: 0 8px 20px rgba(0, 0, 0, .25); }
+
+/* Carrossel da home: "Ideal para" no mesmo formato de tags da página Programas */
+.slide__label { font: 700 calc(9.56 * var(--u)) / calc(14.34 * var(--u)) var(--f-ui); letter-spacing: calc(.956 * var(--u)); text-transform: uppercase; color: var(--blue); margin-bottom: calc(8 * var(--u)); }
+.slide__tags { display: flex; flex-wrap: wrap; gap: calc(6.373 * var(--u)); width: 100%; }
+.slide__tags li { padding: calc(5.5 * var(--u)) calc(9 * var(--u)); border-radius: calc(5 * var(--u)); background: #eef2f8; color: var(--navy); font: 600 calc(10.2 * var(--u)) / calc(12.7 * var(--u)) var(--f-body); }
+@media (max-width: 980px) {
+  .slide__label { font-size: 12px; line-height: 16px; margin-bottom: 10px; }
+  .slide__tags { gap: 8px; }
+  .slide__tags li { padding: 8px 12px; border-radius: 8px; font-size: 13px; line-height: 16px; }
+}
+.slide__text { margin-bottom: calc(18 * var(--u)); }
+.slide__btn { margin-top: calc(18 * var(--u)); }
+@media (max-width: 980px) { .slide__text { margin-bottom: 18px; } .slide__btn { margin-top: 22px; } }
