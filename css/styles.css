@@ -1123,3 +1123,11 @@ a.contact__item:hover .contact__value { text-decoration: underline; }
   .hp-card, .hp-talks { padding: 28px 24px; }
   .hp-card__title, .hp-card--main .hp-card__title { font-size: 28px; line-height: 34px; }
 }
+
+/* NR-1: textos maiores que o frame original */
+.nr-hero__grid { height: auto; min-height: 392px; }
+.nr-hero__lead { max-width: 500px; font-size: 16px; line-height: 25px; padding-top: 24px; }
+.nr-info__grid { height: auto; min-height: 492px; }
+.nr-info__left .ab-text, .nr-info__left .nr-badge + .ab-text { max-width: none; }
+.nr-info__left .ab-text strong { color: var(--blue); font-weight: 700; }
+.nr-pill { width: auto; padding: 0 16px 2px; }
