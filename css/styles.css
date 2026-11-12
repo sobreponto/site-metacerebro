@@ -808,3 +808,9 @@ a.contact__item:hover .contact__value { text-decoration: underline; }
 @media (max-width: 560px) {
   .nr-step { padding: 16px; gap: 12px; }
 }
+
+/* Página Contato: mesmo bloco da home, com respiro para o menu fixo */
+.contact--page { padding-top: 143px; }
+.contact--page .contact__bg img { width: 140.02%; height: 154.26%; left: -33.08%; top: -30.58%; }
+@media (max-width: 1100px) { .contact--page { padding-top: 120px; } }
+@media (max-width: 720px) { .contact--page { padding-top: 104px; } }
