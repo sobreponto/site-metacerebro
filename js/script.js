@@ -24,11 +24,16 @@
   /* ---------------- Link ativo (scrollspy) ---------------- */
   var links = Array.prototype.slice.call(nav.querySelectorAll(".nav__link"));
   var map = {};
-  links.forEach(function (a) { map[a.getAttribute("href").slice(1)] = a; });
+  links.forEach(function (a) {
+    var h = a.getAttribute("href");
+    var key = a.getAttribute("data-spy") || (h.charAt(0) === "#" ? h.slice(1) : null);
+    if (key) map[key] = a;
+  });
   var spyIds = ["inicio", "sobre", "solucoes", "resultados", "nr1", "contato"];
   var sections = spyIds.map(function (id) { return document.getElementById(id); }).filter(Boolean);
 
   function updateActive() {
+    if (!sections.length) return; // página sem seções rastreadas (ex.: Sobre): mantém o link ativo do HTML
     var y = window.scrollY + (parseInt(getComputedStyle(document.documentElement).getPropertyValue("--nav-h"), 10) || 92) + 40;
     var current = "inicio";
     sections.forEach(function (s) { if (s.offsetTop <= y) current = s.id; });
