@@ -814,3 +814,108 @@ a.contact__item:hover .contact__value { text-decoration: underline; }
 .contact--page .contact__bg img { width: 140.02%; height: 154.26%; left: -33.08%; top: -30.58%; }
 @media (max-width: 1100px) { .contact--page { padding-top: 120px; } }
 @media (max-width: 720px) { .contact--page { padding-top: 104px; } }
+
+/* ==========================================================================
+   PÁGINA PROGRAMAS (MCDH, Essencial, Palestras)
+   ========================================================================== */
+.pg-tag { display: inline-flex; align-items: center; height: 31px; padding: 0 16px 2px; border-radius: 20px; background: rgba(255, 255, 255, .15); color: #fff; font: 700 12px/18px var(--f-ui); letter-spacing: 1.44px; text-transform: uppercase; }
+.pg-tag--soft { background: var(--pill-2); color: var(--blue); }
+.pg-label { padding: 28px 0 12px; font: 700 12px/16px var(--f-ui); letter-spacing: 1.2px; text-transform: uppercase; color: var(--blue); }
+.pg-label--light { color: #cad5e2; }
+.pg-btn { margin-top: 36px; display: inline-flex; align-items: center; justify-content: center; height: 44px; padding: 0 26px; border-radius: 6px; background: var(--navy); color: #fff; font: 800 14px/20px var(--f-title); transition: transform .2s ease, background .2s ease, box-shadow .2s ease; }
+.pg-btn:hover { transform: translateY(-2px); background: var(--blue-dark); box-shadow: 0 8px 20px rgba(27, 57, 117, .25); }
+.pg-btn--light { background: #fff; color: #0d2352; }
+.pg-btn--light:hover { background: #fff; box-shadow: 0 8px 20px rgba(0, 0, 0, .25); }
+.pg-chips { display: flex; flex-wrap: wrap; gap: 10px; }
+.pg-chip { padding: 9px 14px; border-radius: 8px; background: #eef2f8; color: var(--navy); font: 600 13px/16px var(--f-body); }
+.pg-chips--dark .pg-chip { background: rgba(255, 255, 255, .1); color: #fff; }
+
+/* MCDH — destaque principal */
+.pg-feature { position: relative; isolation: isolate; overflow: hidden; background: var(--navy); color: #fff; padding: 88px 24px; }
+.pg-feature__grid { max-width: 1119px; margin: 0 auto; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: 56px; align-items: start; }
+.pg-feature__text, .pg-feature__steps { min-width: 0; }
+.pg-feature__title { padding-top: 20px; font: 900 34px/40px var(--f-title); color: #fff; text-wrap: balance; }
+.pg-feature__p { padding-top: 16px; font: 400 16px/24px var(--f-body); color: #cad5e2; }
+.pg-feature__p strong { color: #fff; font-weight: 700; }
+.pg-feature__steps .pg-label { padding-top: 0; }
+.pg-steps { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.pg-step { padding: 24px; border-radius: 12px; background: rgba(255, 255, 255, .08); border: 1px solid rgba(255, 255, 255, .14); }
+.pg-step__n { font: 900 32px/36px var(--f-title); color: #fff; opacity: .35; }
+.pg-step__t { padding-top: 8px; font: 800 20px/26px var(--f-title); color: #fff; }
+.pg-step__d { padding-top: 8px; font: 400 14px/21px var(--f-body); color: #cad5e2; }
+
+/* Essencial */
+.pg-essential { background: #fff; padding: 88px 24px; }
+.pg-essential__grid { max-width: 1119px; margin: 0 auto; display: grid; grid-template-columns: minmax(0, 480px) minmax(0, 1fr); column-gap: 56px; align-items: stretch; }
+.pg-essential__media { min-height: 420px; border-radius: 12px; overflow: hidden; background: #e2e8f0; }
+.pg-essential__media img { width: 100%; height: 100%; object-fit: cover; }
+.pg-essential__text { min-width: 0; }
+.pg-essential__title { padding-top: 20px; font: 900 30px/36px var(--f-title); color: #203260; text-wrap: balance; }
+.pg-essential__sub { padding-top: 8px; font: 700 16px/24px var(--f-body); color: var(--blue); }
+.pg-essential__p { padding-top: 12px; font: 400 16px/24px var(--f-body); color: var(--ab-text, #45556c); }
+.pg-minis { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.pg-mini { padding: 18px 20px; border-radius: 12px; background: #eef2f8; }
+.pg-mini__n { font: 900 22px/24px var(--f-title); color: #0d2352; opacity: .3; }
+.pg-mini__t { padding-top: 4px; font: 800 17px/24px var(--f-title); color: #0d2352; }
+.pg-mini__d { padding-top: 4px; font: 400 13px/19.5px var(--f-body); color: #62748e; }
+
+/* Palestras */
+.pg-talks { background: #eef2f8; padding: 88px 24px; }
+.pg-talks__head { display: flex; flex-direction: column; align-items: center; text-align: center; }
+.pg-talks__head .sl-pill { width: 111px; background: var(--pill-2); }
+.pg-talks__title { padding-top: 16px; font: 900 40px/44px var(--f-title); color: var(--navy); }
+.pg-talks__lead { padding-top: 12px; max-width: 640px; font: 400 18px/27px var(--f-body); color: var(--ab-text, #45556c); }
+.pg-talks__grid { max-width: 1119px; margin: 48px auto 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; align-items: stretch; }
+.pg-talk { display: flex; flex-direction: column; padding: 32px; border-radius: 16px; background: #fff; box-shadow: 0 10px 30px rgba(27, 57, 117, .08); }
+.pg-talk__n { font: 900 32px/36px var(--f-title); color: var(--navy); opacity: .25; }
+.pg-talk__tag { align-self: flex-start; margin-top: 8px; padding: 4px 12px; border-radius: 20px; background: rgba(255, 255, 255, .16); color: #fff; font: 700 11px/16px var(--f-ui); letter-spacing: 1.1px; text-transform: uppercase; }
+.pg-talk__t { padding-top: 8px; font: 900 22px/28px var(--f-title); color: var(--navy); }
+.pg-talk__sub { padding-top: 10px; font: 700 15px/22px var(--f-body); color: var(--blue); }
+.pg-talk__p { padding-top: 12px; font: 400 14px/22px var(--f-body); color: #62748e; }
+.pg-talk__l { padding: 24px 0 10px; font: 700 12px/16px var(--f-ui); letter-spacing: 1.2px; text-transform: uppercase; color: var(--navy); }
+.pg-talk__ul { display: flex; flex-direction: column; gap: 8px; }
+.pg-talk__ul li { position: relative; padding-left: 18px; font: 400 14px/20px var(--f-body); color: var(--ab-text, #45556c); }
+.pg-talk__ul li::before { content: ""; position: absolute; left: 0; top: 7px; width: 6px; height: 6px; border-radius: 50%; background: var(--blue); }
+.pg-talk--feat { background: var(--navy); box-shadow: 0 20px 40px rgba(27, 57, 117, .3); }
+.pg-talk--feat .pg-talk__n { color: #fff; opacity: .35; }
+.pg-talk--feat .pg-talk__t { color: #fff; }
+.pg-talk--feat .pg-talk__sub { color: #9cc3f0; }
+.pg-talk--feat .pg-talk__p { color: #cad5e2; }
+.pg-talk--feat .pg-talk__l { color: #fff; }
+.pg-talk--feat .pg-talk__ul li { color: #e2e8f0; }
+.pg-talk--feat .pg-talk__ul li::before { background: #9cc3f0; }
+.pg-talks__cta { display: flex; justify-content: center; }
+
+/* NR-1 (chamada) */
+.pg-nr { background: #fff; padding: 72px 24px; }
+.pg-nr__card { max-width: 1119px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 40px; padding: 40px 48px; border-radius: 16px; background: #eef2f8; }
+.pg-nr__text { min-width: 0; max-width: 640px; }
+.pg-nr__eyebrow { font: 600 12px/16px "DM Sans", var(--f-body); letter-spacing: 1.2px; text-transform: uppercase; color: var(--blue); font-variation-settings: "opsz" 14; }
+.pg-nr__title { padding-top: 8px; font: 900 28px/34px var(--f-title); color: #203260; }
+.pg-nr__p { padding-top: 10px; font: 400 16px/24px var(--f-body); color: var(--ab-text, #45556c); }
+.pg-nr .pg-btn { margin-top: 0; flex: none; }
+
+@media (max-width: 1100px) {
+  .pg-feature, .pg-essential, .pg-talks { padding: 64px 32px; }
+  .pg-feature__grid { grid-template-columns: minmax(0, 1fr); row-gap: 40px; }
+  .pg-essential__grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: 40px; }
+  .pg-talks__grid { grid-template-columns: minmax(0, 1fr); max-width: 640px; }
+  .pg-nr { padding: 56px 32px; }
+}
+@media (max-width: 860px) {
+  .pg-essential__grid { grid-template-columns: minmax(0, 1fr); row-gap: 32px; }
+  .pg-essential__media { min-height: 0; aspect-ratio: 16 / 10; max-width: 560px; }
+  .pg-nr__card { flex-direction: column; align-items: flex-start; padding: 32px; }
+}
+@media (max-width: 720px) {
+  .pg-feature, .pg-essential, .pg-talks { padding: 48px 20px; }
+  .pg-feature__title { font-size: 28px; line-height: 34px; }
+  .pg-essential__title { font-size: 26px; line-height: 32px; }
+  .pg-talks__title { font-size: 32px; line-height: 38px; }
+  .pg-nr { padding: 40px 20px; }
+}
+@media (max-width: 560px) {
+  .pg-steps, .pg-minis { grid-template-columns: minmax(0, 1fr); }
+  .pg-talk { padding: 24px; }
+  .pg-nr__title { font-size: 24px; line-height: 30px; }
+}
