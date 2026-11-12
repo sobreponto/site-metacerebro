@@ -29,7 +29,7 @@
     var key = a.getAttribute("data-spy") || (h.charAt(0) === "#" ? h.slice(1) : null);
     if (key) map[key] = a;
   });
-  var spyIds = ["inicio", "sobre", "solucoes", "resultados", "nr1", "contato"];
+  var spyIds = ["inicio", "sobre", "programas", "resultados", "nr1", "contato"];
   var sections = spyIds.map(function (id) { return document.getElementById(id); }).filter(Boolean);
 
   function updateActive() {
